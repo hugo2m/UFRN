@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-JS1</title>
+    <script src="js.js" defer></script>
+</head>
+<body>
+    
+    <div id="button"> <button id="carregar">Mostrar cerveja </button></div>
+    
+    <div id="container"></div>
 
+</body>
+<script>
+
+    function carregarDiv(){
+
+        let div = document.getElementById("container")
+        
+        div.innerHTML = `<h1>Guinness</h1>`
+        
+    }
+
+
+
+    let container = document.getElementById("button")
+
+    container.addEventListener("click", carregarDiv)                 
+
+
+
+
+
+</script>
+
+
+
+</html>
