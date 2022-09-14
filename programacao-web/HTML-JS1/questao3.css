@@ -1,0 +1,16 @@
+
+
+#container.fade{
+   
+    color:aliceblue
+    
+    padding: 0 20px;
+    opacity: 1;
+    transition:opacity .5s ease;
+}
+#container{
+    
+    opacity: 0;
+    transition: opacity 2 ease
+}
+
