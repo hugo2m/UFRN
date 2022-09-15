@@ -1,16 +1,15 @@
 
 
 #container.fade{
-    background-color: blueviolet;
-color:aliceblue
-    
+
+    color:aliceblue
     padding: 0 20px;
     opacity: 1;
-    transition:opacity .5s ease;
+    transition:opacity .9s ease;
 }
-#container{
-    background-color: blue;
+#container{ 
+    
     opacity: 0;
-    transition: opacity 2 ease
+    transition:opacity .9s ease;
 }
 
