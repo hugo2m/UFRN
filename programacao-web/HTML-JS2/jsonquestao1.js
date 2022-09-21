@@ -1,4 +1,3 @@
-//<script>
 
 let cervejas = ["Guiness", "Desperados","Becks"]
 
@@ -18,5 +17,3 @@ function carregarDiv() {
 
 let botao = document.getElementById("buttonCarregar")
 botao.addEventListener("click", carregarDiv)
-
-//</script>
