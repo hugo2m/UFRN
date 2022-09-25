@@ -2,7 +2,7 @@
 
 function transformar(item){
 
-    return `<table id="marcas">${item}</table>`
+    return `<div id="marcas">${item}</div>`
 }
 
 function carregarDiv() {
@@ -32,16 +32,14 @@ function ordenada(){
 
 function abc (){
 
-
-
-    let elemento = cervejas[Math.floor(Math.random() * (cervejas.length))];
+    var elemento = cervejas[Math.floor(Math.random() * (cervejas.length))];
   
-    console.log(`${elemento} ${elemento.length}`);
+console.log(`${elemento} `);
 
     let div = document.getElementById("meu amor")
     let random = cervejas.map(transformar)
     div.innerHTML = `${random.join("<br>")}`
-    console.log(`${cervejas}`)
+
     
 }
 
