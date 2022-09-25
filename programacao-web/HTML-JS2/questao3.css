@@ -1,23 +1,6 @@
-#tabela{
+#texto{
     font-size: 18px;
     margin: 5px;
-
+background-color: aqua;
     height: 100%;
-} 
-
-.l0{
-
-    font-size: 25px;
-    width: 1332px;  
-    background-color:  rgb(195, 144, 77);
-   
-} 
-
-
-.l1 {
-    background-color:  rgb(237, 199, 150);
-    padding: 50px;
-    width: 132px;
-
-
 }
