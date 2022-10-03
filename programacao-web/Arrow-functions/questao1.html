@@ -1,1 +1,45 @@
+<!DOCTYPE html>
 
+<html>   
+
+   <head>
+
+      <meta charset="UTF-8">      
+
+   </head>
+
+   
+
+   <body>
+
+      <div><button id="botaoCarregar">Carregando times...</button></div>
+
+      <div id="meu amor"></div>            
+
+   </body>   
+
+   
+
+   <script>
+
+      let clubes = ["Flamengo", "São Paulo", "Palmeiras"]
+
+      const carregarDiv = (times) => {
+
+         const div = document.getElementById("meu amor")
+
+         const timesHTML = times.map( (item) => `<h1>${item}</h1>` ) 
+
+         div.innerHTML = `${timesHTML.join("\n")}`
+
+      }
+
+      
+
+      let botao = document.getElementById("botaoCarregar")
+
+      botao.addEventListener("click", carregarDiv)                 
+
+   </script>
+
+</html>
