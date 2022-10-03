@@ -2,4 +2,4 @@
 
 2-    Você deve fazer todos os exercícios da receita anterior, modificando o array de cervejas para algum domínio que você acha mais interessante - roupa, sorvete, cachaça, o que você quiser. Todas as funções que você escrever devem ser arrow functions. Todas.
 
-3-   Troque todos os botões dos exercícios anteriores e transforme-os em links, fazendo com que os links chamem os métodos adequados da mesma forma que os botões chamam.
+3-   Troque todos os botões dos exercícios anteriores e transforme-os em links, fazendo com que os links chamem os métodos adequados da mesma forma que os botões chamam..
