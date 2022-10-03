@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="questao5.css">
+</head>
+<body>
+    
+    <div id="meu amor">
+        <button id="buttonCarregar">Carregando times...</button>
+        <table id="texto">
+        </table>
+    </div>
+<div>   
+     
+    <a id="ordenar" href="#"><button>Ordenar times...</button></a>
+    <a id="embaralhar" href="#"><button>Embaralhar times...</button></a>
+    
+    
+</div>
+</table>
+
+
+    <script>
+
+
+
+
+let times = ["Flamengo", "São Paulo","Palmeiras", "Vasco", "Atlético-PR", "Botafogo"];
+
+const transformar = (item) =>  `<div id="marcas">${item}</div>`
+
+const carregarDiv = transformar => {
+
+    let div = document.getElementById("texto")
+    let timesHTML = times.map( item => `${item}` ) 
+    div.innerHTML = `${timesHTML.join("<br>")}`  
+}
+
+
+const ordenada = ()=>{
+
+    let sorted = times.sort((a,b)=>{
+        if (a<b){
+            return -1;
+        }else{
+            return true;
+        }
+    });
+
+
+    let div = document.getElementById("meu amor")
+    let ordenadas = sorted.map( item => `${item}` ) 
+    div.innerHTML = `${ordenadas.join("<br>")}`
+    null;
+}
+
+const embaralhando = () => {
+    clubes = times
+
+    clubes.sort(() => Math.random() - 0.5);
+
+  
+let div = document.getElementById("meu amor")
+    let random = clubes.map(( item => `${item}` ))
+    div.innerHTML = `${random.join("<br>")}`
+    
+}
+
+let botao = document.getElementById("buttonCarregar")
+botao.addEventListener("click", carregarDiv)
+
+let ordenar = document.getElementById("ordenar")
+ordenar.addEventListener("click", ordenada)
+
+let embaralhar = document.getElementById("embaralhar")
+embaralhar.addEventListener("click", embaralhando)
+
+// const str = ['Life', 'a'];
+
+// console.log(`${str} ${str.length}`);
+    </script>
+</body>
+</html>
