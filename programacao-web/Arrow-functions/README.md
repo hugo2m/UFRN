@@ -1,0 +1,5 @@
+1-    Faça mais uma refatoração. Modifique a função carregarDiv do modo que ela receba um parâmetro, identificado por cervs. Esse parâmetro é um vetor e a chamada ao método map, dentro da função carregarDiv, deve ser feita sobre o parâmetro cervs e não sobre a variável (global) cervejas. Faça as alterações necessárias para que o array cervejas seja passado como parâmetro para o carregarDiv e a página contunue com o mesmo comportamento.
+
+2-    Você deve fazer todos os exercícios da receita anterior, modificando o array de cervejas para algum domínio que você acha mais interessante - roupa, sorvete, cachaça, o que você quiser. Todas as funções que você escrever devem ser arrow functions. Todas.
+
+3-   Troque todos os botões dos exercícios anteriores e transforme-os em links, fazendo com que os links chamem os métodos adequados da mesma forma que os botões chamam.
