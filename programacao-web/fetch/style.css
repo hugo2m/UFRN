@@ -1,0 +1,52 @@
+#botaoCarregar{
+    border-color:#68b465;
+    background:linear-gradient(to bottom, #abd5aa 5%, #68b465 100%);
+    box-shadow:inset 0px 1px 0px 0px #e3f1e3;
+    color:#fff;
+    text-shadow:0px 1px 0px #528009;
+    border-radius: 50px;
+    background-color: rgb(18, 160, 207);
+    height: 100%;
+    width: 100%;
+    font-size:x-large;
+
+}
+
+#botaoCarregar:hover {
+    background-color: hsl(131, 90%, 45%);
+  }
+
+#tableBirita {
+
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 2px 16px;
+    border-radius: 50px;
+}
+
+.tableBirita{
+    margin-top: 10px;
+    padding: 1%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(153, 219, 241);
+    border-radius: 10px;
+    font-size: larger;
+    text-justify:inter-word;    
+}
+td {
+
+    padding: 2px;
+    border-right: 1px solid darkcyan;
+    border-radius: 10px;
+    }
+  
+  
+table tr:nth-child(even) {
+    background-color: #f5acac;
+    
+  }
+  
+table tr:hover {
+    background-color: hsl(131, 90%, 45%);
+  }
