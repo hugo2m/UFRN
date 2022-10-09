@@ -59,7 +59,7 @@
       const carregarDiv = (cs, id="cervejasDiv", l0 = cabecalho, obj = objeto)  => {
          
          const div = document.getElementById(id)
-         const cabecalho = l0.map(item => `<th>${item}</th>`)
+         const cabecalho = l0.map(item => `<th>${item}</th>`).join("")
          const itensHtml = cs.map( item => `<tr>`+ obj.map(objet=> `<td>${item[objet]}</td>`)+`</tr>` )
          div.innerHTML = `<tr>${cabecalho}</tr>${itensHtml.join("\n")}`
       }
