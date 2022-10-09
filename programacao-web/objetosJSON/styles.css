@@ -1,0 +1,25 @@
+#botaoCarregar {
+
+    font-size: 16px;
+    padding: 2px 16px;
+    border-radius: 50px;
+    background-color: rgb(18, 160, 207);
+}
+
+td {
+
+
+    padding: 2px;
+    border-right: 1px solid darkcyan;
+    border-radius: 10px;
+    }
+  
+  
+table tr:nth-child(even) {
+    background-color: #a8a7a7;
+    
+  }
+  
+table tr:hover {
+    background-color: hsl(131, 90%, 45%);
+  }

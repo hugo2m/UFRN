@@ -5,6 +5,7 @@
    <head>
 
       <meta charset="UTF-8">      
+       <link rel="stylesheet"href="styles.css">
 
    </head>
 
@@ -14,7 +15,7 @@
 
       <div><button id="botaoCarregar">Carregando cervejas...</button></div>
 
-      <div id="cervejasDiv"></div>            
+      <table id="cervejasDiv"></table>            
 
    </body>   
 
@@ -23,47 +24,44 @@
    <script>
 
 
-
+      let cabecalho=["Nome", "Alcool", "Amargor", "Estilo"]
+      let objeto =["name", "alcohol", "style", "ibu"]
       let cervejas = [
-
-         {
-
+         
+         { 
             name: "Guiness", 
-
-            alcohol: "10%"            
+            alcohol: "10%",
+            style: "Red Ale",
+            ibu: 29     
 
          }, 
 
          {
-
             name: "Desperados",
-
-            alcohol: "6%"             
+            alcohol: "6%",
+            style: "English IPA",
+            ibu: 33           
 
          }, 
 
          {
-
             name: "Becks",
-
-            alcohol: "5%"             
+            alcohol: "5%", 
+            style: "Imperial Stout",
+            ibu: 38           
 
          }
 
       ]
 
-    
-
       //cs é um array de cervejas
 
-      const carregarDiv = cs => {
-
-         const div = document.getElementById("cervejasDiv")
-
-         const itensHtml = cs.map( ({name,alcohol}) => `<div>${name} -- ${alcohol}</div>` ) 
-
-         div.innerHTML = `${itensHtml.join("\n")}`
-
+      const carregarDiv = (cs, id="cervejasDiv", l0 = cabecalho, obj = objeto)  => {
+         
+         const div = document.getElementById(id)
+         const cabecalho = l0.map(item => `<th>${item}</th>`)
+         const itensHtml = cs.map( item => `<tr>`+ obj.map(objet=> `<td>${item[objet]}</td>`)+`</tr>` )
+         div.innerHTML = `<tr>${cabecalho}</tr>${itensHtml.join("\n")}`
       }
 
 
