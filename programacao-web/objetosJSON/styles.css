@@ -1,5 +1,6 @@
 #botaoCarregar {
-
+   
+    color: rgb(255, 255, 255);
     font-size: 16px;
     padding: 2px 16px;
     border-radius: 50px;
@@ -8,7 +9,7 @@
 
 td {
 
-
+  
     padding: 2px;
     border-right: 1px solid darkcyan;
     border-radius: 10px;
