@@ -1,12 +1,13 @@
 export default function Home(){
-
+    const estilosDaHomePage = { backgroundColor: "red" }
     return (
  
-       <div>
+        
+       <div style= {estilosDaHomePage}>
  
           <h2>
  
-            Viva Santana!!
+            Viva Santana
  
           </h2>
  
@@ -15,5 +16,3 @@ export default function Home(){
     )
  
  }
- 
- 
