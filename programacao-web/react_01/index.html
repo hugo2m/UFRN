@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>React01</title>
 </head>
 <body>
 
-    <div id="app"></div>
-    <div id="area2"></div>     
+    <div id="div1"></div>
+    <div id="div2"></div>     
 
     <script src="libs/react.js"></script>
     <script src="libs/react-dom.js"></script>
@@ -18,11 +18,15 @@
 
         const carregarDiv = cs => {
          
-         const div = document.getElementById("abc")
-         const itensHtml = cs.map( item => `<tr><td>${item['name']}</td><td>${item['alcohol']}</td><td>${item['style']}</td><td>${item['ibu']}</td></tr>` )
+            const div = document.getElementById("abc")
+         const itensHtml = cs.map( item => `<tr><td>${item['name']}</td><td>${item['alcohol']}</td><td>${item['style']}</td><td>${item['ibu']}</td><td>${item['nota']}</td></tr>` )
          div.innerHTML = `<thead>
             <tr>
-                <th>Nome</th><th>Alcool</th><th>Ibu</th><th>Estilo</th>
+                <th>Nome</th>
+                <th>Alcool</th>
+                <th>Ibu</th>
+                <th>Estilo</th>
+                <th>Nota</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -36,7 +40,8 @@
             name: "Guiness", 
             alcohol: "10%",
             style: "Red Ale",
-            ibu: 29     
+            ibu: 29,
+            nota: "4.7"     
 
          }, 
 
@@ -44,7 +49,8 @@
             name: "Desperados",
             alcohol: "6%",
             style: "English IPA",
-            ibu: 33           
+            ibu: 33 ,  
+            nota: "4.1"        
 
          }, 
 
@@ -52,20 +58,23 @@
             name: "Becks",
             alcohol: "5%", 
             style: "Imperial Stout",
-            ibu: 38           
+            ibu: 38,
+            nota: "4.9"           
 
          }
         
         ]
         
       const Tabela =()=> {
-         return <div>
+         return (
+            <div>
                <table id="abc"></table>
             </div>
+            )
         }
 
         const TabelaBebidas = () => {
-            return 
+            return (
                 <div id="app">
                     <table id="tabela" border="1">
                         <thead>
@@ -82,15 +91,16 @@
                                         </tbody>
                                         </table>
                                         </div>
+            )
         }
         const Cabecalho = ()=>{
-            return <h1>Minha tabela de bebidas</h1>
+            return <h1>Tabela de bebidas</h1>
             }
 
 
 
         const Botao = () => {
-         return <button id="botaoCarregar">Carregando cervejas...</button>
+         return <button id="botaoCarregar" className="btn btn-outline-secondary">Carregando...</button>
         }
 
         ReactDOM.render(
@@ -99,7 +109,7 @@
             <TabelaBebidas/>
             </div>
             , 
-            document.getElementById("app"))
+            document.getElementById("div1"))
         
             ReactDOM.render(
                <div>
@@ -107,11 +117,11 @@
                   <Tabela/>
                </div>
             ,
-            document.getElementById("area2"))
+            document.getElementById("div2"))
 
 
-            let botao = document.getElementById("botaoCarregar")
-            botao.addEventListener("click", () => CarregarDiv(cervejas) )  
+             let botao = document.getElementById("botaoCarregar")
+            botao.addEventListener("click", () => CarregarDiv(cervejas) )    
 
      </script>
 </body>
