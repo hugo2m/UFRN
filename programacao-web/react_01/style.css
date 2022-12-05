@@ -1,0 +1,58 @@
+div2 {
+    background-color: rgb(235, 235, 241);
+  padding-top: 20px;
+  width: auto;
+  height: auto;
+
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+  border-bottom: 1px solid rgb(201, 198, 198);
+}
+
+th {
+  border: 1px solid #ddd;
+
+  background-color: rgb(235, 235, 241)
+}
+
+tr:hover {
+  background-color: rgb(228, 150, 121);
+}
+
+
+/* TITULO */
+h1 {
+    background-color: rgb(235, 235, 241);
+    text-align: center;
+}
+/* BUTTON */
+
+button {
+  margin-top: 15px;
+  font-weight: bold;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 12px;
+  margin-left: 15px;
+  background-color: rgb(114, 186, 204);
+  transition-duration: 0.4s;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-size: 16px;
+  padding: 6px 24px;
+   
+}
+
+button:hover {
+  background-color: rgb(228, 150, 121);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);   
+}
+
+button:focus {
+  opacity: 0%;
+}
